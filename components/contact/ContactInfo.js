@@ -38,6 +38,7 @@ export default function ContactInfo() {
           display: flex;
           align-items: center;
           gap: 28px;
+          flex-wrap: wrap;
         }
 
         .contact-info-label {
@@ -65,6 +66,9 @@ export default function ContactInfo() {
           font-family: Inter, -apple-system, Roboto, Helvetica, sans-serif;
           font-size: 16px;
           font-weight: 400;
+          overflow-wrap: anywhere;
+          word-break: break-word;
+          min-width: 0;
         }
 
         @media (min-width: 769px) {
@@ -78,6 +82,7 @@ export default function ContactInfo() {
             flex-direction: column;
             align-items: flex-start;
             gap: 28px;
+            flex-wrap: nowrap;
           }
 
           .contact-label-text {

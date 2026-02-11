@@ -258,7 +258,7 @@ export default function SkillsPage() {
 
       {/* Languages Section */}
       <section className="mt-[109px]">
-        <h2 className="font-['Inter'] font-semibold text-[48px] text-white mb-[33px]">
+        <h2 className="font-['Inter'] font-semibold text-[34px] text-white mb-[33px] break-words [@media(min-width:769px)]:text-[48px]">
           Languages
         </h2>
         <div className="flex flex-col gap-[21px]">

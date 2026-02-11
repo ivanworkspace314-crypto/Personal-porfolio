@@ -84,6 +84,7 @@ export default function ContactForm() {
           font-weight: 400;
           letter-spacing: -0.21px;
           outline: none;
+          min-width: 0;
         }
 
         .form-input::placeholder,
@@ -118,6 +119,8 @@ export default function ContactForm() {
           letter-spacing: -0.21px;
           cursor: pointer;
           transition: opacity 0.2s;
+          text-align: center;
+          white-space: normal;
         }
 
         .form-submit-btn:hover {
@@ -137,6 +140,23 @@ export default function ContactForm() {
 
           .form-field {
             gap: 20px;
+          }
+        }
+
+        @media (max-width: 480px) {
+          .form-input,
+          .form-textarea,
+          .form-submit-btn {
+            font-size: 18px;
+          }
+
+          .form-input,
+          .form-textarea {
+            padding: 14px 16px;
+          }
+
+          .form-submit-btn {
+            padding: 14px 12px;
           }
         }
       `}</style>

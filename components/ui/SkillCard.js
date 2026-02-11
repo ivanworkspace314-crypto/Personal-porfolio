@@ -11,7 +11,7 @@ export default function SkillCard({
       style={{ borderColor: borderColor, borderWidth: '3px' }}
     >
       <div className="p-[18px] [@media(min-width:769px)]:p-[24px_32px]">
-        <div className="flex items-center gap-[14px] [@media(min-width:769px)]:gap-[24px]">
+        <div className="flex items-center gap-[24px] [@media(min-width:769px)]:gap-[24px]">
           {/* Icon */}
           <div className="shrink-0 w-[48px] h-[48px] flex items-center justify-center [@media(min-width:769px)]:w-[67px] [@media(min-width:769px)]:h-[67px]">
             {icon}
@@ -19,8 +19,8 @@ export default function SkillCard({
 
           <div className="flex-1 min-w-0">
             {/* Skill Name + Percentage */}
-            <div className="flex items-baseline justify-between gap-[12px]">
-              <span className="font-['Inter'] font-semibold text-[18px] [@media(min-width:769px)]:text-[28px] text-white line-clamp-2 [@media(min-width:769px)]:line-clamp-none">
+            <div className="flex flex-wrap items-baseline justify-between gap-[12px]">
+              <span className="font-['Inter'] font-semibold text-[18px] [@media(min-width:769px)]:text-[28px] text-white break-words">
                 {name}
               </span>
               <span className="font-['Inter'] font-semibold text-[18px] [@media(min-width:769px)]:text-[28px] text-white shrink-0">

@@ -1,5 +1,3 @@
-
-
 const DesktopMenu = () => {
   return (
     <>
@@ -62,7 +60,7 @@ const DesktopMenu = () => {
             </span>
           </a>
 
-          <a href="projects" className="flex items-center h-[75px] no-underline relative">
+          <a href="/projects" className="flex items-center h-[75px] no-underline relative">
             <div className="w-[40px] h-[40px] rounded-full bg-[#7BE3F7] flex items-center justify-center ml-[5px]">
               <svg className="w-[20px] h-[20px]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path fillRule="evenodd" clipRule="evenodd" d="M6 6V5C6 4.20435 6.31607 3.44129 6.87868 2.87868C7.44129 2.31607 8.20435 2 9 2H11C11.7956 2 12.5587 2.31607 13.1213 2.87868C13.6839 3.44129 14 4.20435 14 5V6H16C16.5304 6 17.0391 6.21071 17.4142 6.58579C17.7893 6.96086 18 7.46957 18 8V11.57C15.4396 12.5187 12.7305 13.003 10 13C7.2695 13.003 4.56037 12.5188 2 11.57V8C2 7.46957 2.21071 6.96086 2.58579 6.58579C2.96086 6.21071 3.46957 6 4 6H6ZM8 5C8 4.73478 8.10536 4.48043 8.29289 4.29289C8.48043 4.10536 8.73478 4 9 4H11C11.2652 4 11.5196 4.10536 11.7071 4.29289C11.8946 4.48043 12 4.73478 12 5V6H8V5ZM9 10C9 9.73478 9.10536 9.48043 9.29289 9.29289C9.48043 9.10536 9.73478 9 10 9H10.01C10.2752 9 10.5296 9.10536 10.7171 9.29289C10.9046 9.48043 11.01 9.73478 11.01 10C11.01 10.2652 10.9046 10.5196 10.7171 10.7071C10.5296 10.8946 10.2752 11 10.01 11H10C9.73478 11 9.48043 10.8946 9.29289 10.7071C9.10536 10.5196 9 10.2652 9 10Z" fill="white"/>
@@ -74,7 +72,7 @@ const DesktopMenu = () => {
             </span>
           </a>
 
-          <a href="contact" className="flex items-center h-[75px] no-underline relative">
+          <a href="/contact" className="flex items-center h-[75px] no-underline relative">
             <div className="w-[40px] h-[40px] rounded-full bg-[#7BE3F7] flex items-center justify-center ml-[5px]">
               <svg className="w-[20px] h-[20px]" width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M2.003 5.884L10 9.882L17.997 5.884C17.9674 5.37444 17.7441 4.89549 17.3728 4.54523C17.0016 4.19497 16.5104 3.99991 16 4H4C3.48958 3.99991 2.99845 4.19497 2.62718 4.54523C2.25591 4.89549 2.0326 5.37444 2.003 5.884Z" fill="white"/>
