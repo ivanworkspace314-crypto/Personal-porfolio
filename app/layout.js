@@ -1,6 +1,7 @@
 import { Geist, Geist_Mono } from "next/font/google";
 import "./globals.css";
 import NavigationShell from "@/components/navigation/NavigationShell";
+import PageShell from "@/components/layout/PageShell";
 const geistSans = Geist({
   variable: "--font-geist-sans",
   subsets: ["latin"],
@@ -34,7 +35,9 @@ export default function RootLayout({ children }) {
       <body
         className={`${geistSans.variable} ${geistMono.variable} antialiased`}
       >
-        <NavigationShell>{children}</NavigationShell>
+        <NavigationShell>
+          <PageShell>{children}</PageShell>
+        </NavigationShell>
       </body>
     </html>
   );

@@ -1,6 +1,5 @@
 'use client';
 
-import HeroBackground from '@/components/hero/HeroBackground';
 import HeroContent from '@/components/hero/HeroContent';
 import HeroHeading from '@/components/hero/HeroHeading';
 import SkillCard from '@/components/ui/SkillCard';
@@ -236,48 +235,45 @@ const languagesData = [
 
 export default function SkillsPage() {
   return (
-    <main className="relative min-h-screen bg-black ml-0 [@media(min-width:769px)]:ml-[397px] [@media(min-width:769px)]:w-[calc(100%-397px)] overflow-hidden">
-      <HeroBackground />
-      <HeroContent className="pt-[70px] [@media(min-width:769px)]:pt-[125px]">
-       
-        <HeroHeading title="Skills"/>
+    <HeroContent className="pt-[70px] [@media(min-width:769px)]:pt-[125px]">
+     
+      <HeroHeading title="Skills"/>
 
 
-        {/* Skills Section */}
-        <section className="mt-[70px] [@media(min-width:769px)]:mt-[33px]">
-          <div className="flex flex-col gap-[21px]">
-            {skillsData.map((skill, index) => (
-              <SkillCard
-                key={index}
-                icon={skill.icon}
-                name={skill.name}
-                percentage={skill.percentage}
-                borderColor={skill.borderColor}
-                progressColor={skill.progressColor}
-              />
-            ))}
-          </div>
-        </section>
+      {/* Skills Section */}
+      <section className="mt-[70px] [@media(min-width:769px)]:mt-[33px]">
+        <div className="flex flex-col gap-[21px]">
+          {skillsData.map((skill, index) => (
+            <SkillCard
+              key={index}
+              icon={skill.icon}
+              name={skill.name}
+              percentage={skill.percentage}
+              borderColor={skill.borderColor}
+              progressColor={skill.progressColor}
+            />
+          ))}
+        </div>
+      </section>
 
-        {/* Languages Section */}
-        <section className="mt-[109px]">
-          <h2 className="font-['Inter'] font-semibold text-[48px] text-white mb-[33px]">
-            Languages
-          </h2>
-          <div className="flex flex-col gap-[21px]">
-            {languagesData.map((language, index) => (
-              <SkillCard
-                key={index}
-                icon={language.icon}
-                name={language.name}
-                percentage={language.percentage}
-                borderColor={language.borderColor}
-                progressColor={language.progressColor}
-              />
-            ))}
-          </div>
-        </section>
-      </HeroContent>
-    </main>
+      {/* Languages Section */}
+      <section className="mt-[109px]">
+        <h2 className="font-['Inter'] font-semibold text-[48px] text-white mb-[33px]">
+          Languages
+        </h2>
+        <div className="flex flex-col gap-[21px]">
+          {languagesData.map((language, index) => (
+            <SkillCard
+              key={index}
+              icon={language.icon}
+              name={language.name}
+              percentage={language.percentage}
+              borderColor={language.borderColor}
+              progressColor={language.progressColor}
+            />
+          ))}
+        </div>
+      </section>
+    </HeroContent>
   );
 }

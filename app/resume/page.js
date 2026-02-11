@@ -1,4 +1,3 @@
-import HeroBackground from "@/components/hero/HeroBackground";
 import HeroContent from "@/components/hero/HeroContent";
 import HeroHeading from "@/components/hero/HeroHeading";
 import ResumeCard from "@/components/ui/ResumeCard";
@@ -26,25 +25,22 @@ export default function ResumePage() {
   ];
 
   return (
-    <main className="relative min-h-screen bg-black ml-0 [@media(min-width:769px)]:ml-[397px] [@media(min-width:769px)]:w-[calc(100%-397px)] overflow-hidden">
-      <HeroBackground />
-      <HeroContent className="pt-[70px] [@media(min-width:769px)]:pt-[125px]">
-      
-      {/* <div className="relative pt-[70px] px-[33px] z-[1] [@media(min-width:769px)]:pt-[125px] [@media(min-width:769px)]:pl-[128px]"> */}
-       
-        <HeroHeading title="Resume"/>
-        <div className="space-y-[20px] w-[775px] [@media(max-width:1024px)]:w-[calc(100%-66px)] [@media(max-width:768px)]:w-[calc(100%-48px)]">
-          {resumeData.map((item, index) => (
-            <ResumeCard
-              key={index}
-              year={item.year}
-              title={item.title}
-              description={item.description}
-            />
-          ))}
-        </div>
-      {/* </div> */}
-      </HeroContent>
-    </main>
+    <HeroContent className="pt-[70px] [@media(min-width:769px)]:pt-[125px]">
+    
+    {/* <div className="relative pt-[70px] px-[33px] z-[1] [@media(min-width:769px)]:pt-[125px] [@media(min-width:769px)]:pl-[128px]"> */}
+     
+      <HeroHeading title="Resume"/>
+      <div className="space-y-[20px] w-[775px] [@media(max-width:1024px)]:w-[calc(100%-66px)] [@media(max-width:768px)]:w-[calc(100%-48px)]">
+        {resumeData.map((item, index) => (
+          <ResumeCard
+            key={index}
+            year={item.year}
+            title={item.title}
+            description={item.description}
+          />
+        ))}
+      </div>
+    {/* </div> */}
+    </HeroContent>
   );
 }

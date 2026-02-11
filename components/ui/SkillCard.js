@@ -11,7 +11,7 @@ export default function SkillCard({
       style={{ borderColor: borderColor, borderWidth: '3px' }}
     >
       <div className="p-[18px] [@media(min-width:769px)]:p-[24px_32px]">
-        <div className="flex items-start gap-[14px] [@media(min-width:769px)]:gap-[24px]">
+        <div className="flex items-center gap-[14px] [@media(min-width:769px)]:gap-[24px]">
           {/* Icon */}
           <div className="shrink-0 w-[48px] h-[48px] flex items-center justify-center [@media(min-width:769px)]:w-[67px] [@media(min-width:769px)]:h-[67px]">
             {icon}
