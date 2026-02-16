@@ -1,10 +1,18 @@
-export default function ProjectCard({ name, description, url, imageUrl }) {
+import TechTag from "./TechTag";
+
+export default function ProjectCard({
+  name,
+  description,
+  url,
+  imageUrl,
+  techStacks,
+}) {
   return (
     <a
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex w-full max-w-[360px] [@media(min-width:769px)]:max-w-[420px] mx-auto aspect-[4/5] border-[3px] border-[#7BE3F7] rounded-[8px] [@media(max-width:768px)]:rounded-[10px] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(123,227,247,0.3)]"
+      className="flex w-full max-w-[360px] [@media(min-width:769px)]:max-w-[420px] mx-auto aspect-[4/5] border-[3px] border-[#7BE3F7] rounded-[8px] [@media(max-width:768px)]:rounded-[10px] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(123,227,247,0.3)] hover:scale-[1.02]"
     >
       <div className="flex flex-col bg-black w-full h-full">
         {/* Image Container */}
@@ -32,6 +40,16 @@ export default function ProjectCard({ name, description, url, imageUrl }) {
           <p className="text-[16px] [@media(max-width:768px)]:text-[19px] font-light font-['Inter'] text-white leading-[150%] line-clamp-5">
             {description}
           </p>
+          <div className="space-x-2">
+            {Array.isArray(techStacks) && techStacks.length > 0 ? (
+              <div className="flex flex-wrap gap-[8px]">
+                {techStacks.map((tech) => (
+                  <TechTag key={tech}>{tech}</TechTag>
+                ))}
+              </div>
+            ) : null}
+          </div>
+        
         </div>
       </div>
     </a>

@@ -34,7 +34,7 @@ const MobileNavMenu = ({toggleMenu}) => {
           </span>
         </a>
 
-        <a
+        {/* <a
           href="/about"
           className="flex items-center h-[82px] no-underline"
           onClick={toggleMenu}
@@ -57,7 +57,7 @@ const MobileNavMenu = ({toggleMenu}) => {
           <span className="font-['Inter'] text-[20px] font-semibold text-white ml-[26px]">
             About Me
           </span>
-        </a>
+        </a> */}
 
         <a
           href="/resume"
