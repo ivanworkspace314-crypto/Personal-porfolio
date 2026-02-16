@@ -8,9 +8,8 @@ export default function Home() {
     <HeroContent>
       <HeroHeading title="Hi, I'm Ivan Lo" subtitle="Mern Stack Developer" />
       <HeroDescription>
-        Creating Seamless user experiences through innovation mern stack
-        development. Building responsive and dynamic web application and
-        mobile application for the modern digital world.
+Welcome to my portfolio! I'm Ivan, a web developer with 2 years of experience in MERN stack development. I specialize in creating dynamic, user-friendly applications using MongoDB, Express.js, React, and Node.js. Let's build something amazing together!
+
       </HeroDescription>
       <HeroCTAGroup primaryLabel="Hire Me" secondaryLabel="Let's Talk" />
     </HeroContent>

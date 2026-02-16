@@ -4,54 +4,55 @@ import ProjectCard from "@/components/ui/ProjectCard";
 
 export default function ProjectsPage() {
   const projectsData = [
+    
+    {
+      id: 0,
+      name: "Portfolio Website",
+      description:
+        "A portfolio website that showcases my skills, previous project and myself",
+      imageUrl: "/projectImages/myportfolio.png",
+    },
     {
       id: 1,
-      name: "E-Commerce Platform",
+      name: "Dev Events",
       description:
-        "Full-stack e-commerce solution with shopping cart, product catalog, and payment integration using Next.js, React, and Stripe API.",
-      url: "https://example-ecommerce.com",
-      imageUrl: "https://api.builder.io/api/v1/image/assets/TEMP/a9cf7f81645725f2026812585355ed3c93c1776d?width=600",
+        "An event management platform with admin tools to publish events, view events and reservations.",
+      url: "https://dev-event-app-sigma.vercel.app/",
+      imageUrl: "/projectImages/eventApp.png",
     },
     {
       id: 2,
-      name: "Portfolio Website",
+      name: "Movie Discovery Application",
       description:
-        "Modern responsive portfolio website showcasing projects and skills with smooth animations, dark mode support, and SEO optimization.",
-      url: "https://portfolio-example.com",
-      imageUrl: "https://api.builder.io/api/v1/image/assets/TEMP/a9cf7f81645725f2026812585355ed3c93c1776d?width=600",
+        "A responsive movie discovery app that lets users search films, explore popular titles, and filter results by year with a fast, debounced search experience.",
+      url: "https://movie-discovery-web-app-movie-app.onrender.com/",
+      imageUrl: "/projectImages/movieApp.png",
     },
     {
       id: 3,
-      name: "Task Management App",
+      name: "News Explorer Application",
       description:
-        "Collaborative task management application with real-time updates, user authentication, task scheduling, and progress tracking features.",
-      url: "https://tasks-example.com",
-      imageUrl: "https://api.builder.io/api/v1/image/assets/TEMP/a9cf7f81645725f2026812585355ed3c93c1776d?width=600",
+        "A responsive news app built with Next.js that showcases featured stories, archives by year, and detailed article pages with dynamic routing and image views.",
+      url: "https://news-app-next-js-2mhe.vercel.app/news",
+      imageUrl: "/projectImages/newsApp.png",
     },
     {
       id: 4,
-      name: "Analytics Dashboard",
+      name: "Product Catalog Manager",
       description:
-        "Interactive analytics dashboard with real-time data visualization, custom charts, and detailed reporting capabilities for business metrics.",
-      url: "https://analytics-example.com",
-      imageUrl: "https://api.builder.io/api/v1/image/assets/TEMP/a9cf7f81645725f2026812585355ed3c93c1776d?width=600",
+        "A full-stack product catalog app for browsing, creating, and editing items in a responsive UI.",
+      url: "https://productcatalogwebsite-4.onrender.com/",
+      imageUrl: "/projectImages/productStore.png",
     },
     {
       id: 5,
-      name: "Mobile Weather App",
+      name: "ThinkBoard",
       description:
-        "iOS and Android weather application with real-time forecasts, location services, weather alerts, and detailed weather information.",
-      url: "https://weather-example.com",
-      imageUrl: "https://api.builder.io/api/v1/image/assets/TEMP/a9cf7f81645725f2026812585355ed3c93c1776d?width=600",
+        "My first Mern stack application, simple note-taking app with CRUD operations.",
+      url: "https://thinkboard-1s0i.onrender.com/",
+      imageUrl: "/projectImages/thinkboard2.png",
     },
-    {
-      id: 6,
-      name: "Social Media Platform",
-      description:
-        "Feature-rich social network with user profiles, real-time messaging, post feeds, notifications, and community engagement tools.",
-      url: "https://social-example.com",
-      imageUrl: "https://api.builder.io/api/v1/image/assets/TEMP/a9cf7f81645725f2026812585355ed3c93c1776d?width=600",
-    },
+    
   ];
 
   return (
@@ -59,7 +60,7 @@ export default function ProjectsPage() {
       <HeroHeading title="Projects" />
       
       {/* Projects Grid */}
-      <div className="grid grid-cols-[repeat(auto-fit,minmax(260px,1fr))] gap-[20px] [@media(min-width:769px)]:gap-[24px] [@media(max-width:768px)]:px-[20px]">
+      <div className="grid grid-cols-[repeat(auto-fit,minmax(360px,1fr))] gap-[20px] [@media(min-width:769px)]:gap-[24px] [@media(max-width:768px)]:px-[20px]">
         {projectsData.map((project) => (
           <ProjectCard
             key={project.id}

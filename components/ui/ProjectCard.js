@@ -4,11 +4,11 @@ export default function ProjectCard({ name, description, url, imageUrl }) {
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex w-full max-w-[360px] mx-auto aspect-[4/5] border-[3px] border-[#7BE3F7] rounded-[8px] [@media(max-width:768px)]:rounded-[10px] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(123,227,247,0.3)]"
+      className="flex w-full max-w-[360px] [@media(min-width:769px)]:max-w-[420px] mx-auto aspect-[4/5] border-[3px] border-[#7BE3F7] rounded-[8px] [@media(max-width:768px)]:rounded-[10px] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(123,227,247,0.3)]"
     >
       <div className="flex flex-col bg-black w-full h-full">
         {/* Image Container */}
-        <div className="w-full aspect-[16/9] bg-[#918E8E] overflow-hidden flex-shrink-0">
+        <div className="w-full aspect-[3/2] bg-[#918E8E] overflow-hidden flex-shrink-0 mt-[10px]">
           <img
             src={imageUrl}
             alt={name}
@@ -29,7 +29,7 @@ export default function ProjectCard({ name, description, url, imageUrl }) {
           </h3>
 
           {/* Project Description */}
-          <p className="text-[16px] [@media(max-width:768px)]:text-[19px] font-light font-['Inter'] text-white leading-[120%] line-clamp-3">
+          <p className="text-[16px] [@media(max-width:768px)]:text-[19px] font-light font-['Inter'] text-white leading-[150%] line-clamp-5">
             {description}
           </p>
         </div>

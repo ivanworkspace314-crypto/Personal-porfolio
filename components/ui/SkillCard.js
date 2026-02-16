@@ -7,7 +7,7 @@ export default function SkillCard({
 }) {
   return (
     <div
-      className="w-full rounded-[10px] bg-transparent shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] overflow-hidden [@media(min-width:769px)]:w-[900px]"
+      className="w-full rounded-[10px] bg-transparent shadow-[0_4px_4px_0_rgba(0,0,0,0.25)] overflow-hidden [@media(min-width:769px)]:w-[1100px]"
       style={{ borderColor: borderColor, borderWidth: '3px' }}
     >
       <div className="p-[18px] [@media(min-width:769px)]:p-[24px_32px]">

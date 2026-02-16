@@ -1,5 +1,3 @@
-# Home Page Test
-
 Personal portfolio website built with the Next.js App Router and Tailwind CSS.
 
 ## Tech Stack
