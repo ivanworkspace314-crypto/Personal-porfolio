@@ -5,7 +5,11 @@ const DesktopMenu = () => {
       <aside className="w-[397px] h-screen bg-[#0C1B28] fixed left-0 top-0 [@media(max-width:1024px)]:w-[280px] [@media(max-width:768px)]:hidden">
         {/* Profile Section */}
         <div className="text-center pt-[171px] [@media(max-width:1024px)]:pt-[60px]">
-          <div className="w-[116px] h-[116px] rounded-full bg-[#D9D9D9] mx-auto mb-[18px]"></div>
+          <img
+            src="/mySelfie/IvanLo3.png"
+            alt="Ivan Lo profile picture"
+            className="w-[116px] h-[116px] rounded-full object-cover mx-auto mb-[18px]"
+          />
           <h1 className="font-['Source Serif Pro'] text-[36px] font-semibold text-white mb-[9px]">
             Ivan Lo
           </h1>
