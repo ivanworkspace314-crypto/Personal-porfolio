@@ -12,7 +12,7 @@ export default function ProjectCard({
       href={url}
       target="_blank"
       rel="noopener noreferrer"
-      className="flex w-full max-w-[360px] [@media(min-width:769px)]:max-w-[420px] mx-auto aspect-[4/5] border-[3px] border-[#7BE3F7] rounded-[8px] [@media(max-width:768px)]:rounded-[10px] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(123,227,247,0.3)] hover:scale-[1.02]"
+      className="flex w-full min-w-0 max-w-[360px] [@media(min-width:769px)]:max-w-[420px] mx-auto aspect-[4/5] border-[3px] border-[#7BE3F7] rounded-[8px] [@media(max-width:768px)]:rounded-[10px] overflow-hidden transition-all duration-300 ease-in-out hover:shadow-[0_0_20px_rgba(123,227,247,0.3)] hover:scale-[1.02]"
     >
       <div className="flex flex-col bg-black w-full h-full">
         {/* Image Container */}
