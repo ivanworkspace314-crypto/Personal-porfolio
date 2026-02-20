@@ -28,7 +28,7 @@ export default function ResumePage() {
     {/* <div className="relative pt-[70px] px-[33px] z-[1] [@media(min-width:769px)]:pt-[125px] [@media(min-width:769px)]:pl-[128px]"> */}
      
       <HeroHeading title="Resume"/>
-      <div className="space-y-[20px] w-[775px] [@media(max-width:1024px)]:w-[calc(100%-66px)] [@media(max-width:768px)]:w-[calc(100%-48px)]">
+      <div className="space-y-[20px] w-[775px] mx-auto [@media(max-width:1024px)]:w-[calc(100%-40px)] [@media(max-width:768px)]:w-[calc(100%-24px)]">
         {resumeData.map((item, index) => (
           <ResumeCard
             key={index}
