@@ -1,5 +1,8 @@
 Personal portfolio website built with the Next.js App Router and Tailwind CSS.
 live version: <a href="https://ivan-lo-dev.vercel.app/"> HERE </a>
+
+<img width="1420" height="743" alt="Screenshot 2026-03-02 at 10 22 27 PM" src="https://github.com/user-attachments/assets/6cb5f8ea-2a72-4b33-8a7c-175e5d356c6d" />
+
 ## Tech Stack
 
 - Next.js 16 (App Router)
