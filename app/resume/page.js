@@ -7,7 +7,7 @@ export default function ResumePage() {
     {
   "year": "2019-2024",
   "title": "College Education",
-  "description": "Completed a Bachelor’s Degree in Computer Engineering from the University of Hong Kong in 2023."
+  "description": "Completed a Bachelor’s Degree in Computer Engineering from the University of Hong Kong in 2024."
 },
 {
   "year": "2024-2025",
