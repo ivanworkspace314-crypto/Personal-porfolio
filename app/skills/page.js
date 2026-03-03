@@ -7,7 +7,7 @@ import SkillCard from '@/components/ui/SkillCard';
 const skillsData = [
   {
     name: 'HTML + CSS + JavaScript',
-    percentage: 85,
+    percentage: 80,
     borderColor: '#7BE3F7',
     progressColor: '#7BE3F7',
     icon: (
@@ -50,7 +50,7 @@ const skillsData = [
   },
   {
     name: 'MERN: MongoDB + Express.js + React.js + Node.js',
-    percentage: 95,
+    percentage: 85,
     borderColor: '#7BE3F7',
     progressColor: '#7BE3F7',
     icon: (
@@ -64,7 +64,7 @@ const skillsData = [
   },
   {
     name: 'Next.js',
-    percentage: 95,
+    percentage: 85,
     borderColor: '#7BE3F7',
     progressColor: '#7BE3F7',
     icon: (
@@ -117,7 +117,7 @@ const skillsData = [
   },
   {
     name: 'Tailwind CSS',
-    percentage: 75,
+    percentage: 70,
     borderColor: '#7BE3F7',
     progressColor: '#7BE3F7',
     icon: (
@@ -189,7 +189,7 @@ const languagesData = [
     ),
   },
   {
-    name: 'Chinese',
+    name: 'Chinese (Cantonese)',
     percentage: 95,
     borderColor: '#56C5BB',
     progressColor: '#56C5BB',
@@ -227,6 +227,44 @@ const languagesData = [
             strokeLinecap="round"
             strokeLinejoin="round"
           />
+        </svg>
+      </div>
+    ),
+  },
+  {
+    name: 'Japanese (JLPT N2)',
+    percentage: 60,
+    borderColor: '#56C5BB',
+    progressColor: '#56C5BB',
+    icon: (
+      <div className="relative w-[67px] h-[67px]">
+        <svg
+          width="67"
+          height="67"
+          viewBox="0 0 67 67"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute"
+        >
+          <circle cx="33.5" cy="33.5" r="33.5" fill="white" />
+        </svg>
+        <svg
+          width="46"
+          height="46"
+          viewBox="0 0 46 46"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="absolute top-[10.5px] left-[10.5px]"
+        >
+          <rect
+            x="5.75"
+            y="5.75"
+            width="34.5"
+            height="34.5"
+            rx="2.875"
+            fill="white"
+          />
+          <circle cx="23" cy="23" r="13" fill="#BC002D" />
         </svg>
       </div>
     ),

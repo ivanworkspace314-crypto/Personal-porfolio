@@ -5,12 +5,21 @@ import ProjectCard from "@/components/ui/ProjectCard";
 export default function ProjectsPage() {
   const projectsData = [
     {
-      id: 0,
+      id: -1,
       name: "My Portfolio Website",
       description:
         "A portfolio website that showcases my skills, previous project and myself",
       imageUrl: "/projectImages/myportfolio.png",
-      techStacks: ["Next.js", "Tailwind CSS"],
+      techStacks: ["Next.js","React.js", "Tailwind CSS","Vercel"],
+    },
+    {
+      id: 0,
+      name: "Japanese Simple Quiz App",
+      description:
+        "I build this Japanese Quiz App for myself to remember annoying words and grammar. ",
+      url:"https://japanese-verb-quiz.vercel.app/",
+      imageUrl: "/projectImages/japaneseQuizApp2.png",
+      techStacks: ["Next.js", "React.js", "Tailwind CSS","Vercel"],
     },
     {
       id: 1,
@@ -19,32 +28,32 @@ export default function ProjectsPage() {
         "An event management platform with admin tools to publish events, view events and reservations.",
       url: "https://dev-event-app-sigma.vercel.app/",
       imageUrl: "/projectImages/eventApp.png",
-      techStacks: ["Next.js", "React", "Tailwind CSS", "MongoDB", "Cloudinary"],
+      techStacks: ["Next.js", "React", "Tailwind CSS", "MongoDB", "Cloudinary","Vercel"],
     },
     {
       id: 2,
       name: "Movie Discovery Application",
       description:
         "A responsive movie discovery app that lets users search films with keywords and year of publish",
-      url: "https://movie-discovery-web-app-movie-app.onrender.com/",
+      url: "https://ivanlo.dev/",
       imageUrl: "/projectImages/movieApp.png",
-      techStacks: ["React", "Tailwind CSS", "TMDB API"],
+      techStacks: ["React", "Tailwind CSS", "TMDB API","hostinger"],
     },
     {
       id: 3,
       name: "News Explorer Application",
       description:
-        "A responsive news app built with Next.js that showcases featured stories, archives by year, and detailed article pages with dynamic routing and image views.",
+        "A responsive Next.js news app with featured stories, yearly archives, and dynamic article pages.",
       url: "https://news-app-next-js-2mhe.vercel.app/news",
       imageUrl: "/projectImages/newsApp.png",
-      techStacks: ["Next.js", "React", "Node.js", "Docker"],
+      techStacks: ["Next.js", "React", "Node.js", "Docker","Vercel"],
     },
     {
       id: 4,
       name: "Product Catalog Manager",
       description:
         "A full-stack product catalog app for browsing, creating, and editing items in a responsive UI.",
-      url: "https://productcatalogwebsite-4.onrender.com/",
+      //url: "https://productcatalogwebsite-4.onrender.com/",
       imageUrl: "/projectImages/productStore.png",
       techStacks: [
         "React",
@@ -53,7 +62,7 @@ export default function ProjectsPage() {
         "Express",
         "MongoDB",
         "Mongoose",
-        
+        "Render"
       ],
     },
     {
@@ -63,7 +72,7 @@ export default function ProjectsPage() {
         "My first Mern stack application, simple note-taking app with CRUD operations.",
       url: "https://thinkboard-1s0i.onrender.com/",
       imageUrl: "/projectImages/thinkboard2.png",
-      techStacks: ["React", "Tailwind CSS", "DaisyUI", "Node.js", "Express.js", "MongoDB"]
+      techStacks: ["React", "Tailwind CSS", "DaisyUI", "Node.js", "Express.js", "MongoDB","Render"]
     },
   ];
 

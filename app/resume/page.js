@@ -5,19 +5,19 @@ import ResumeCard from "@/components/ui/ResumeCard";
 export default function ResumePage() {
   const resumeData = [
     {
-  "year": "2019-2023",
+  "year": "2019-2024",
   "title": "College Education",
   "description": "Completed a Bachelor’s Degree in Computer Engineering from the University of Hong Kong in 2023."
 },
 {
-  "year": "2023-2024",
+  "year": "2024-2025",
   "title": "Dropshipping Business",
   "description": "Attempted to establish a Dropshipping Business on Shopify."
 },
 {
-  "year": "2024-Current",
+  "year": "2025-Current",
   "title": "Full Stack Developer",
-  "description": "Engaged in full-stack courses for six months using online resources and currently working as a freelance web developer primarily with the MERN stack."
+  "description": "Engaged in full-stack courses for six months using online resources primarily with the MERN stack."
 }
     
   ];
